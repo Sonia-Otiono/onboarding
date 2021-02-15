@@ -1,0 +1,67 @@
+.left-section{
+    height: 100%;
+    background-color: #7E51FF;
+    position: relative;
+    color: #FFFFFF;
+}
+.logo{
+    max-width: 130px;
+    height: 50px;
+    left: 32px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.pad-32{
+    padding: 32px;
+}
+.page-tab{
+    margin-top: 112px;
+}
+.new-biz{
+    margin-top: 150px;
+}
+.new-biz h1{
+    font-weight: 400;
+    font-size: 30px;
+}
+.new-biz p{
+    font-size: 14px;
+}
+.new-biz img{
+    margin-bottom: 30px;
+}
+.new-biz footer p{
+    margin-top: 10px;
+    margin-bottom: 5px ;
+}
+
+/*
+.inner{
+    position: absolute;
+    top: 112px;
+    left: 32px;
+    bottom: 35px;
+    right: 32px;
+}
+.inner h1{
+    top: 170px;
+    right: 32px;
+    font-weight: 400;
+}
+.inner p{
+    top: 248px;
+    font-size: 13px;
+}
+img{
+    width: 294px;
+    height: 303.34px;
+    top: 402.58px;
+}
+.inner footer p{
+    width: 114px;
+    height: 19px;
+    top: 846px;
+    font-size: 14px;
+}*/
+

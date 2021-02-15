@@ -1,0 +1,42 @@
+/* .fullpage{
+    width: 1440px;
+    height: 900px;
+    
+} */
+
+.login{
+    padding: 32px;
+}
+.member{
+    color: #1C1335;
+}
+.sign-in{
+    color: #FA4A84;
+}
+.create{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px ;
+}
+.create h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: #1B003B;
+}
+.create p{
+    font-size: 16px;
+    color: #3c444b !important;
+}
+.btn{
+    background-color:#FA4A84;
+    max-width: 100%;
+}
+
+
+.btn-next{
+    width: 100%;
+}
+form label{
+    font-size: 12px;
+}
