@@ -2,7 +2,7 @@
     /* padding: 32px; */
 }
 .topbar{
-    padding: 32px;
+    padding: 32px 0 0 12px;
 }
 .member{
     color: #1C1335 !important;
@@ -37,6 +37,7 @@
 .btn-next{
     width: 100%;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 form label{
     font-size: 12px;
