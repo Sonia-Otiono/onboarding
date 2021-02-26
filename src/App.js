@@ -4,6 +4,7 @@ import Screen1 from './Components/SignUp1/CreateAcc'
 import Screen2 from './Components/SignUp2/OpenBizA'
 import Screen3 from './Components/SignUp3/LastReg'
 import Screen4 from './Components/SignIn/access'
+import DashPage from './Components/Dashboard/Dashboard'
 
 
 import React from "react";
@@ -39,7 +40,7 @@ const App = function App() {
     
     <div className="page full-height">
       <Switch>
-   
+      <Route path="/dashboard" component={DashPage} />
       <Route path="/signup2" component={Screen2} />
       <Route path="/signup3" component={Screen3} />
       <Route path="/signin" component={Screen4} />

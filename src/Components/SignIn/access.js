@@ -32,8 +32,9 @@ function Screen4() {
                                 <label for="last_name">Enter password</label>
                             </div>
                             <div className="d-md-block">
-                                
-                                <button type="button" className="btn btn-next">Next</button>
+                                <Link to="./dashboard">
+                                    <button type="button" className="btn btn-next">Next</button>
+                                </Link>
                             </div>
                         </form>
                     </div>
