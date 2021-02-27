@@ -1,4 +1,4 @@
-body {
+/* body {
     margin-top: 50px;
     background-color: #fff;
     font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@ body {
       background: #fff;
     }
     /* .navbar-nav { */
-      .panel {
+      /* .panel {
         border: 0 none;
         box-shadow: none;
         margin: 0;
@@ -67,9 +67,9 @@ body {
     position: relative;
     padding: 0;
     list-style: none;  
-  }
+  }  */
   /* .nv {   */
-    li {
+    /* li {
       display: block;
       position: relative;
     }
@@ -83,28 +83,45 @@ body {
         color: #444;
         padding: 10px 25px;
         display: block;
+        text-decoration: none; */
         /* vertical-align: middle; */
-      }
+      /* }
         
         .ic {
           font-size: 16px;
           margin-right: 5px;
           font-weight: 300;
           display: inline-block;
-        }
+        } */
     /* ns: nav-sub
     .ns {
       li { */
-        a {
+        /* a {
           padding: 10px 50px;
         }
             
-  /*main content wrapper*/
+  main content wrapper
   .mcw {
     margin-left: 250px;
     position: relative;
-    min-height: 100%;
+    min-height: 100%; */
     
     /*content view*/
    
+  /* } */
+
+/* .naira{
+
+} */
+  .kobo{
+    font-size: 25px;
+  }
+  .curr{
+    background-color: white;
+  }
+  .sub-btn{
+    height: 0px;
+  }
+  .fa-square{
+    color: #7E51FF;
   }
