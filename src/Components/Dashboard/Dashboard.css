@@ -118,10 +118,39 @@
   }
   .curr{
     background-color: white;
+    margin: 20px 0px;
   }
   .sub-btn{
-    height: 0px;
+    height: 50%;
   }
-  .fa-square{
+  .curr-icon{
+    color: rgb(238, 235, 235);
+    /* border:#7E51FF 2px; */
+  }
+  .curr-icon2{
     color: #7E51FF;
+  }
+  .curr-icons{
+    color: #00D2FF;
+  }
+  .curr-i{
+    color: #d9f4fa;
+  }
+  .bank-transfer{
+    color: #E900AE;
+  }
+  .progress{
+    height: 6px;
+  }
+  .progress-bar{
+    background-color: #FFCF56;
+  }
+  .transfer{
+    color: #00EC47;
+  }
+  .internet{
+    color: #17ECD4;
+  }
+  .marketing{
+    color: #C155FF;
   }

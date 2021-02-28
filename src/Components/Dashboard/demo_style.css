@@ -379,7 +379,7 @@
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 63px);
-  background: linear-gradient(to top, #5768f3, #1c45ef);
+  background: #ffffff;
   font-family: "roboto", sans-serif;
   padding: 0;
   width: 270px;
@@ -434,7 +434,7 @@
       display: flex;
       padding: 15px 30px 15px 55px;
       white-space: nowrap;
-      color: #fff; }
+      color: #8397AB; }
       .sidebar > .nav .nav-item .nav-link i.menu-arrow {
         margin-left: auto;
         margin-right: 0;
@@ -610,7 +610,7 @@
       width: 100%; } }
 
 .content-wrapper {
-  background: #F3F3F3;
+  background: #F4F8FB;
   padding: 5rem 5rem;
   width: 100%;
   flex-grow: 1; }
@@ -633,7 +633,7 @@
   margin-bottom: 2px; }
   @media (max-width: 992px) {
     .page-title {
-      margin-botttom: 15px; } }
+      margin-bottom: 15px; } }
 
 .quick-links {
   list-style: none;
