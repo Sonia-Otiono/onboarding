@@ -37,17 +37,22 @@ const Screen3 = () => {
             <div className="col-md-3 p-0 ">
                 <LeftCoin/>
             </div>
+
             <div className="col-md-9">     
-             <div class="row d-flex topbar">
-                 <div className="col-md-8 justify-content-start">
-                 <Link to="/signup2">
-                <a><i className="fa fa-chevron-left back2 fa-md"></i></a>
-                </Link>
-                 </div>
-                 <div className="col-md-4 justify-content-end">
-                 <p className="member">Already a member? <Link to="/signin"><span className="sign-in"> <a> Sign In </a></span></Link></p>
-                 </div>
-            </div>
+                <div class="row topbar">
+                    <div className="col-md-6">
+                        <Link to="/">
+                            <span className="fa-stack fa-1x">
+                                <i className="fa fa-square name bank-transfer fa-stack-2x"></i>
+                                <i className="fa fa-chevron-left name2 fa-inverse fa-stack-1x"></i>
+                            </span>
+                        </Link>
+                    </div>
+                    <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
+                        <p className="member">Already a member? <Link to="/signin"><span className="sign-in"> <a> Sign In </a></span></Link></p>
+                    </div>
+                </div>
+           
             
                 <div className="create d-flex">
                 <div class="col-md-5">

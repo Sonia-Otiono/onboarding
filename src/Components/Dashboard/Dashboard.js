@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Dashboard.css'
 import './demo_style.css'
 // import './flag-icon.min.css'
@@ -8,6 +8,7 @@ import './demo_style.css'
 import './vendor.bundle.addons.css'
 import './vendor.bundle.base.css'
 // import RouterIcon from '@material-ui/icons/Router';
+import RecentBiz from './Transactions'
 
 
 
@@ -16,8 +17,11 @@ import {
   } from "react-router-dom";
 
 function DashPage() {
-    return(
 
+  const [content, setContent] = useState(false)
+  const showMore = () => {setContent(true)}
+
+    return(
         // <div>
         <div class="container-scroller">
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -41,7 +45,7 @@ function DashPage() {
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail d-flex justify-content-end">
+                  <div class="preview-thumbnail d-flex justify-content-sm-end justify-content-md-end">
                     <img src="assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic"/>
                   </div>
                   <div class="preview-item-content flex-grow py-2">
@@ -151,7 +155,7 @@ function DashPage() {
                       <h3>Welcome back, Kathy</h3>
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
-                  <div className="col-md-3 d-flex justify-content-end ml-0">
+                  <div className="col-md-3 d-flex justify-content-sm-end justify-content-md-end ml-0">
                     <div>
                       
                       <button type="button" className="btn btn-danger sub-btn p-2">Add a sub account</button>
@@ -198,7 +202,7 @@ function DashPage() {
                               <h5 class="mb-0 ">SAVINGS ACCOUNT</h5>
                               <p class="mb-0 text-muted">SUB ACCOUNT - 12346789</p>
                             </div>
-                            <div className="col-md-5 d-flex justify-content-end">
+                            <div className="col-md-5 d-flex justify-content-sm-end justify-content-md-end">
                               <span className="fa-stack fa-2x">
                                 <i className="fa fa-circle curr-i fa-stack-2x"></i>
                                 <i className="fa fa-square curr-icons fa-stack-1x fa-inverse"></i>
@@ -353,8 +357,8 @@ function DashPage() {
                     <div className="col-md-6">
                         <h5 className="">Recent transactions</h5>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-end">
-                      <button type="button" className="btn border border-danger bg-white">See all</button>
+                    <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
+                      <button type="button" className="btn border border-danger bg-white" onClick={showMore}>See all</button>
                     </div>
                   </div>
                   
@@ -373,72 +377,13 @@ function DashPage() {
                             </div>
                       </div>
                     </div>
-                    <div className="col-md-9 d-flex justify-content-end">
+                    <div className="col-md-9 d-flex justify-content-sm-end justify-content-md-end">
                       <p>-N145.90</p>
                     </div>
                   </div>
-                                    
-                  <div className="row mb-4">
-                    <div className="col-md-3">
-                      <div className="row">
-                            <div className="col-md-3">
-                            <span className="fa-stack fa-1x">
-                              <i className="fa fa-circle name fa-stack-2x"></i>
-                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
-                            </span>
-                            </div>
-                            <div className="col-md-9">
-                              <p className="mb-0">Adam Chapman</p>
-                              <p className="text-muted">12:49pm</p>
-                            </div>
-                      </div>
-                    </div>
-                    <div className="col-md-9 d-flex justify-content-end">
-                      <p>-N2,000.00</p>
-                    </div>
-                  </div>
-                                    
-                  <div className="row mb-4">
-                    <div className="col-md-3">
-                      <div className="row">
-                            <div className="col-md-3">
-                            <span className="fa-stack fa-1x">
-                              <i className="fa fa-circle name fa-stack-2x"></i>
-                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
-                            </span>
-                            </div>
-                            <div className="col-md-9">
-                              <p className="mb-0">Shirley Barnes</p>
-                              <p className="text-muted">12:49pm</p>
-                            </div>
-                      </div>
-                    </div>
-                    <div className="col-md-9 d-flex justify-content-end">
-                      <p>-N2,000.00</p>
-                    </div>
-                  </div>
-                                    
-                  <div className="row mb-4">
-                    <div className="col-md-3">
-                      <div className="row">
-                            <div className="col-md-3">
-                            <span className="fa-stack fa-1x">
-                              <i className="fa fa-circle name fa-stack-2x"></i>
-                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
-                            </span>
-                            </div>
-                            <div className="col-md-9">
-                              <p className="mb-0">Shirley Barnes</p>
-                              <p className="text-muted">12:49pm</p>
-                            </div>
-                      </div>
-                    </div>
-                    <div className="col-md-9 d-flex justify-content-end">
-                      <p>-N2,000.00</p>
-                    </div>
-                  </div>
-                                    
 
+                  {content ? <RecentBiz /> : null}
+                          
                 </div>
                 
               {/* </div> */}
