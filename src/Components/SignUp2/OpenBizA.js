@@ -1,12 +1,36 @@
 import React, {useState} from 'react'
 import LeftCoin from '../LeftCoin/Left'
+import SubContent from './SubContent'
+import SubContent2 from './SubContent2'
+import SubContent3 from './SubContent3'
 import './OpenBizA.css'
 import {
     Link
   } from "react-router-dom";
 
 const Screen2 = () => {
-    // const [showResults, setShowResults] = useState(true)
+    
+    const [showResults, setShowResults] = useState(false)
+    const showSubContent = () => {
+        setShowResults(true)
+        setShowResults2(false)
+        setShowResults3(false)
+    }
+
+    const [showResults2, setShowResults2] = useState(false)
+    const showSubContent2 = () => {
+        setShowResults2(true)
+        setShowResults(false)
+        setShowResults3(false)
+    }
+
+    const [showResults3, setShowResults3] = useState(false)
+    const showSubContent3 = () => {
+        setShowResults3(true)
+        setShowResults(false)
+        setShowResults2(false)
+    }
+
     return(
         <div className="container-fluid full-height">
         <div className="row full-height">
@@ -32,46 +56,37 @@ const Screen2 = () => {
                         <p>A short description about account types</p>
                     </div>
                     <form>
-                        <div className="shadow-sm border border-danger border-bottom box1 p-2 mb-2 rounded">
+                        <div className="shadow-sm border border-bottom box1 p-2 mb-2 rounded">
                             <div className="form-check">
-                                <input className="form-check-input" type="radio" name="cac" />
-                                <label className="form-check-label cac1" for="cac">
+                                <input className="form-check-input" type="radio" id="registered" name="cac" onClick={showSubContent} />
+                                <label className="form-check-label cac1" for="registered">
                                     <p>I have a registered business/ charity with CAC</p>
-                                        As a registered business you'll get:
                                 </label>
-                            </div>
-                                <div className="click1" id="results" >
-                                {/* showResults? */}
-                                <p><i className="fa fa-check fa-md"></i > Account in your business name</p>
-                                {/* : null */}
-                                <p><i className="fa fa-check fa-md"></i > Send to and receive transfers from all Nigerian banks</p>
-                                <p><i className="fa fa-check fa-md"></i > Send to and receive transfers from all Nigerian banks</p>
-                                </div>
-                            
-                            {/* <button onClick={()=>setShowResults(true)}>show</button>
-                            <button onClick={()=>setShowResults(false)}>hide</button> */}
-
+                            </div>  
+                                {showResults ? <SubContent /> : null}
                         </div>
                         <div className="shadow-sm border-bottom box2 p-2 mb-2 rounded">
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="no-reg"/>
+                            <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubContent2} />
                             <label className="form-check-label" for="no-reg">
                                 <p>My business is not yet registered, I would like to register</p>
                             </label>
                         </div>
+                            {showResults2 ? <SubContent2 /> : null}
                         </div>
                         <div className="shadow-sm box3 border-bottom p-2 mb-2 rounded">
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="freelance"/>
+                            <input className="form-check-input" type="radio" id="freelance" name="cac" onClick={showSubContent3} />
                             <label className="form-check-label" for="freelance">
                                 <p>I'm a freelancer I do business in my personal name</p>
                             </label>
                         </div>
+                            {showResults3 ? <SubContent3 /> : null}
                         </div>
                         <div className="d-md-block">
                         <Link to="/signup3">
-                                <button type="button" className="btn btn-next p-2">Next</button>
-                                </Link>
+                            <button type="button" className="btn btn-next p-2">Next</button>
+                        </Link>
                         </div>
                     </form>
                     </div>
