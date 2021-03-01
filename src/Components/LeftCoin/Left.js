@@ -10,9 +10,9 @@ const LeftCoin = () => {
             <header>
                 <img className="logo" src={Logo} alt="Brand-logo"/>
             </header>
-            <div className="page-tab">
+            {/* <div className="page-tab">
 
-            </div>
+            </div> */}
             <div className="new-biz">
                 <h1>Create multiple sub-account</h1>
                 <p>Organise your business finances easily
