@@ -30,6 +30,8 @@
 .btn-next{
     width: 100%;
     color: #FFFFFF;
+    margin-bottom: 30px;
+
 }
 form label{
     font-size: 12px;
