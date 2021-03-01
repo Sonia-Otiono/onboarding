@@ -1,11 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 import LeftCoin from '../LeftCoin/Left'
 import './LastReg.css'
+import SubInfo1 from './SubInfo1'
+import SubInfo2 from './SubInfo2'
+import SubInfo3 from './SubInfo3'
 import {
     Link, Route
   } from "react-router-dom";
 
 const Screen3 = () => {
+
+    const [showResults, setShowResults] = useState(false)
+    const showSubInfo1 = () => {
+        setShowResults(true)
+        setShowResults2(false)
+        setShowResults3(false)
+    }
+
+    const [showResults2, setShowResults2] = useState(false)
+    const showSubInfo2 = () => {
+        setShowResults2(true)
+        setShowResults(false)
+        setShowResults3(false)
+    }
+
+    const [showResults3, setShowResults3] = useState(false)
+    const showSubInfo3 = () => {
+        setShowResults3(true)
+        setShowResults(false)
+        setShowResults2(false)
+    }
+
     return(
         <div className="container-fluid full-height">
         <div className="row full-height">
@@ -33,33 +58,30 @@ const Screen3 = () => {
                     <form>
                         <div className="shadow-sm border-bottom box1 p-2 mb-2 rounded">
                             <div className="form-check">
-                                <input className="form-check-input" type="radio" name="cac"/>
-                                <label className="form-check-label" for="cac">
+                                <input className="form-check-input" type="radio" id="registered" name="cac" onClick={showSubInfo1} />
+                                <label className="form-check-label" for="registered">
                                     <p>I have a registered business/ charity with CAC</p>
                                 </label>
                             </div>
+                            {showResults ? <SubInfo1 /> : null}
                         </div>
                         <div className="shadow-sm border border-danger border-bottom box2 p-2 mb-2 rounded">
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="no-reg"/>
+                            <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubInfo2} />
                             <label className="form-check-label cac2" for="no-reg">
                                 <p>My business is not yet registered, I would like to register</p>
-                                    Everything you need to start your business
                             </label>
                         </div>
-                        <div className="click2">
-                                <p><i className="fa fa-check fa-md"></i > Registered business with the CAC</p>
-                                <p><i className="fa fa-check fa-md"></i > Tax identification number</p>
-                                <p><i className="fa fa-check fa-md"></i > Your account will be automatically opened on completion</p>
-                            </div>
+                        {showResults2 ? <SubInfo2 /> : null}
                         </div>
                         <div className="shadow-sm box3 border-bottom p-2 mb-2 rounded">
                         <div className="form-check">
-                            <input className="form-check-input" type="radio" name="freelance"/>
+                            <input className="form-check-input" type="radio" id="freelance" name="cac" onClick={showSubInfo3} />
                             <label className="form-check-label" for="freelance">
                                 <p>I'm a freelancer I do business in my personal name</p>
                             </label>
                         </div>
+                            {showResults3 ? <SubInfo3 /> : null}
                         </div>
                         <div className="d-md-block">
                             <Link to="./Dashboard">

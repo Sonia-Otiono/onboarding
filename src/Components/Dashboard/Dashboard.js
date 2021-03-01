@@ -174,7 +174,7 @@ function DashPage() {
                               <h5 class="mb-0 ">CURRENT ACCOUNT</h5>
                               <p class="mb-0 text-muted">PROVIDUS BANK - 9906533917</p>
                             </div>
-                            <div className="col-md-4 d-flex justify-content-end">
+                            <div className="col-md-4 d-flex justify-content-sm-end justify-content-md-end">
                               <p>
                                 <span className="fa-stack fa-2x">
                                   <i className="fa fa-circle curr-icon fa-stack-2x"></i>

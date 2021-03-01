@@ -61,3 +61,19 @@ html, body {
   border-color: #66AFE9;
   border-bottom: 1px #FA4A84;
 }
+@font-face {
+  font-family: 'BRFirma';
+  src: local('BRFirma'), url(./Fonts/BRFirma-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BRFirma';
+  src: local('BRFirma'), url(./Fonts/BRFirma-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BRFirma';
+  src: local('BRFirma'), url(./Fonts/BRFirma-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BRFirma';
+  src: local('BRFirma'), url(./Fonts/BRFirma-Regular.ttf) format('truetype');
+}
