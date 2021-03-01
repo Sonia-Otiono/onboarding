@@ -185,7 +185,7 @@ function DashPage() {
 
             {/* <div class="row">
               <div class="col-md-12 grid-margin"> */}
-                <div class="mb-1">
+                <div class="">
                     <div class="row d-flex justify-content-between">
 
                       <div class="col-md-5 curr p-3">
@@ -298,7 +298,7 @@ function DashPage() {
                             <div className="col-md-3">
                             <span className="fa-stack fa-1x">
                                 <i className="fa fa-square internet fa-stack-2x"></i>
-                                <i className="fa fa-router fa-inverse fa-stack-1x"></i>
+                                <i className="fa fa-wifi fa-inverse fa-stack-1x"></i>
                               </span>
                             </div>
                             <div className="col-md-7">
@@ -367,8 +367,101 @@ function DashPage() {
                     </div>
 
                   </div>
+                </div>
+
+                <div className="bg-white p-3 rounded">
+                  <div className="row ">
+                    <div className="col-md-6">
+                        <h5 className="">Recent transactions</h5>
+                    </div>
+                    <div className="col-md-6 d-flex justify-content-end">
+                      <button type="button" className="btn border border-danger bg-white">See all</button>
+                    </div>
+                  </div>
+                  
+                  <div className="row mb-4">
+                    <div className="col-md-3">
+                      <div className="row">
+                            <div className="col-md-3">
+                            <span className="fa-stack fa-1x">
+                                <i className="fa fa-square name bank-transfer fa-stack-2x"></i>
+                                <i className="fa fa-university name2 fa-inverse fa-stack-1x"></i>
+                              </span>
+                            </div>
+                            <div className="col-md-9">
+                              <p className="mb-0">Transfer Fee</p>
+                              <p className="text-muted">12:49pm</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div className="col-md-9 d-flex justify-content-end">
+                      <p>-N145.90</p>
+                    </div>
+                  </div>
+                                    
+                  <div className="row mb-4">
+                    <div className="col-md-3">
+                      <div className="row">
+                            <div className="col-md-3">
+                            <span className="fa-stack fa-1x">
+                              <i className="fa fa-circle name fa-stack-2x"></i>
+                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
+                            </span>
+                            </div>
+                            <div className="col-md-9">
+                              <p className="mb-0">Adam Chapman</p>
+                              <p className="text-muted">12:49pm</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div className="col-md-9 d-flex justify-content-end">
+                      <p>-N2,000.00</p>
+                    </div>
+                  </div>
+                                    
+                  <div className="row mb-4">
+                    <div className="col-md-3">
+                      <div className="row">
+                            <div className="col-md-3">
+                            <span className="fa-stack fa-1x">
+                              <i className="fa fa-circle name fa-stack-2x"></i>
+                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
+                            </span>
+                            </div>
+                            <div className="col-md-9">
+                              <p className="mb-0">Shirley Barnes</p>
+                              <p className="text-muted">12:49pm</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div className="col-md-9 d-flex justify-content-end">
+                      <p>-N2,000.00</p>
+                    </div>
+                  </div>
+                                    
+                  <div className="row mb-4">
+                    <div className="col-md-3">
+                      <div className="row">
+                            <div className="col-md-3">
+                            <span className="fa-stack fa-1x">
+                              <i className="fa fa-circle name fa-stack-2x"></i>
+                              <i className="fa fa-circle name2 fa-inverse fa-stack-1x"></i>
+                            </span>
+                            </div>
+                            <div className="col-md-9">
+                              <p className="mb-0">Shirley Barnes</p>
+                              <p className="text-muted">12:49pm</p>
+                            </div>
+                      </div>
+                    </div>
+                    <div className="col-md-9 d-flex justify-content-end">
+                      <p>-N2,000.00</p>
+                    </div>
+                  </div>
+                                    
 
                 </div>
+                
               {/* </div> */}
              </div>
           {/* </div>  */}
