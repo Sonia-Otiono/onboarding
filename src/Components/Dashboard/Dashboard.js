@@ -7,6 +7,7 @@ import './demo_style.css'
 // import './style.css'
 import './vendor.bundle.addons.css'
 import './vendor.bundle.base.css'
+// import RouterIcon from '@material-ui/icons/Router';
 
 
 
@@ -40,7 +41,7 @@ function DashPage() {
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
+                  <div class="preview-thumbnail d-flex justify-content-end">
                     <img src="assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic"/>
                   </div>
                   <div class="preview-item-content flex-grow py-2">
@@ -85,7 +86,6 @@ function DashPage() {
                 </div>
                 <div class="text-wrapper">
                   <p class="profile-name">Allen Moreno</p>
-                  <p class="designation">Premium user</p>
                 </div>
               </a>
             </li>
@@ -95,32 +95,8 @@ function DashPage() {
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="menu-icon typcn typcn-coffee"></i>
-                <span class="menu-title">Basic UI Elements</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
-                <i class="menu-icon typcn typcn-shopping-bag"></i>
-                <span class="menu-title">Form elements</span>
-              </a>
-            </li>
+            
+            
             <li class="nav-item">
               <a class="nav-link" href="pages/charts/chartjs.html">
                 <i class="menu-icon typcn typcn-th-large-outline"></i>
@@ -176,7 +152,10 @@ function DashPage() {
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
                   <div className="col-md-3 d-flex justify-content-end ml-0">
-                    <button type="button" className="btn btn-danger sub-btn p-2">Add a sub account</button>
+                    <div>
+                      
+                      <button type="button" className="btn btn-danger sub-btn p-2">Add a sub account</button>
+                    </div>
                   </div>
               </div>
 
