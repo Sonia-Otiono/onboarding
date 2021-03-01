@@ -120,9 +120,9 @@
     background-color: white;
     margin: 20px 0px;
   }
-  .sub-btn{
-    height: 50%;
-  }
+  /* .sub-btn{
+    min-height: 50%;
+  } */
   .curr-icon{
     color: rgb(238, 235, 235);
     /* border:#7E51FF 2px; */

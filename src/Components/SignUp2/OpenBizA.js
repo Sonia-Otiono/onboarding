@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 
 const Screen2 = () => {
-    const [showResults, setShowResults] = useState(true)
+    // const [showResults, setShowResults] = useState(true)
     return(
         <div className="container-fluid full-height">
         <div className="row full-height">
@@ -41,13 +41,15 @@ const Screen2 = () => {
                                 </label>
                             </div>
                                 <div className="click1" id="results" >
-                                showResults?<p><i className="fa fa-check fa-md"></i > Account in your business name</p>: null
+                                {/* showResults? */}
+                                <p><i className="fa fa-check fa-md"></i > Account in your business name</p>
+                                {/* : null */}
                                 <p><i className="fa fa-check fa-md"></i > Send to and receive transfers from all Nigerian banks</p>
                                 <p><i className="fa fa-check fa-md"></i > Send to and receive transfers from all Nigerian banks</p>
                                 </div>
                             
-                            <button onClick={()=>setShowResults(true)}>show</button>
-                            <button onClick={()=>setShowResults(false)}>hide</button>
+                            {/* <button onClick={()=>setShowResults(true)}>show</button>
+                            <button onClick={()=>setShowResults(false)}>hide</button> */}
 
                         </div>
                         <div className="shadow-sm border-bottom box2 p-2 mb-2 rounded">
