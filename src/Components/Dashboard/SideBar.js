@@ -17,8 +17,8 @@ const SideBar = () => {
                             <button type="button" className="btn btn-lg bn-button">BN</button>
                         </div>
                         <div className="col-md-8">
-                            <h5 className="mb-0">Clayvant Inc</h5>
-                            <p>Manage account</p>
+                            <h5 className="mb-0 clay">Clayvant Inc</h5>
+                            <p className="manage mt-0">Manage account</p>
                         </div>
                     </div>
                 </div>
@@ -34,39 +34,39 @@ const SideBar = () => {
 
                     {list ? <DropMenu /> : null}
 
-            <div className="row">
-                <div className="col-md-3 mr-0">
+            <div className="row mb-4">
+                <div className="col-md-2 mr-0">
                     <i className="fa fa-clipboard fa-md"></i>
                 </div>
-                <div className="ml-0 col-md-9">
-                    <p className="text-muted">Invoice</p>
+                <div className="ml-0 col-md-10">
+                    <p className="text-muted side-grey">Invoice</p>
+                </div>
+              
+            </div>
+            <div className="row mb-4">
+                <div className="col-md-2 mr-0">
+                    <i className="fa fa-magic fa-md"></i>
+                </div>
+                <div className="ml-0 col-md-10">
+                    <p className="text-muted side-grey">Management</p>
+                </div>
+              
+            </div>
+            <div className="row mb-4">
+                <div className="col-md-2 mr-0">
+                    <i className="fa fa-magic fa-md"></i>
+                </div>
+                <div className="ml-0 col-md-10">
+                    <p className="text-muted side-grey">Security</p>
                 </div>
               
             </div>
             <div className="row">
-                <div className="col-md-3 mr-0">
+                <div className="col-md-2 mr-0">
                     <i className="fa fa-magic fa-md"></i>
                 </div>
-                <div className="ml-0 col-md-9">
-                    <p className="text-muted">Management</p>
-                </div>
-              
-            </div>
-            <div className="row">
-                <div className="col-md-3 mr-0">
-                    <i className="fa fa-magic fa-md"></i>
-                </div>
-                <div className="ml-0 col-md-9">
-                    <p className="text-muted">Security</p>
-                </div>
-              
-            </div>
-            <div className="row">
-                <div className="col-md-3 mr-0">
-                    <i className="fa fa-magic fa-md"></i>
-                </div>
-                <div className="ml-0 col-md-9">
-                    <p className="text-muted">Support</p>
+                <div className="ml-0 col-md-10">
+                    <p className="text-muted side-grey">Support</p>
                 </div>
               
             </div>
