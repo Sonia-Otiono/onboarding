@@ -119,7 +119,9 @@
   .curr{
     background-color: white;
     margin: 20px 0px;
+    border-radius: 7px;
   }
+  
   /* .sub-btn{
     min-height: 50%;
   } */

@@ -258,7 +258,6 @@
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #1c45ef;
     width: 270px;
     height: 63px; }
     .navbar.default-layout .navbar-brand-wrapper .navbar-brand {
@@ -384,6 +383,7 @@
   padding: 0;
   width: 270px;
   z-index: 11;
+  box-shadow: -8px 0px 15px 1px;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
@@ -443,14 +443,7 @@
         transition-property: transform;
         transition-property: transform, -webkit-transform;
         transition-timing-function: ease-in; }
-        .sidebar > .nav .nav-item .nav-link i.menu-arrow:before {
-          content: "\F054";
-          font-family: "Material Design Icons";
-          font-size: 18px;
-          line-height: 1;
-          font-style: normal;
-          vertical-align: middle;
-          color: #bfccda; }
+        
       .sidebar > .nav .nav-item .nav-link[aria-expanded="true"] i.menu-arrow {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg); }
@@ -533,14 +526,8 @@
       transition-timing-function: "ease-in-out";
       transition-property: "background", "color", "box-shadow", "padding"; }
     .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) {
-      background: #0f25d5;
       padding-left: 65px; }
-      .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]):before {
-        border-color: #fff; }
-      .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) .menu-title {
-        color: #fff; }
-      .sidebar > .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile):not(.hover-open) > .nav-link:not([aria-expanded="true"]) .menu-arrow:before {
-        color: #bfccda; }
+
 
 /* style for off-canvas menu*/
 @media screen and (max-width: 991px) {
