@@ -1,6 +1,8 @@
 import React from 'react';
 import './access.css';
-import LeftCoin from '../LeftCoin/Left'
+import '../LeftCoin/Left.css'
+import Logo from '../../images/logo.svg'
+import CoinImage from '../../images/coins.png'
 import {
     Link
   } from "react-router-dom";
@@ -10,7 +12,26 @@ function Screen4() {
         <div className="container-fluid full-height">
         <div className="row full-height">
             <div className="col-md-3 p-0 ">
-                <LeftCoin/>
+                {/* <LeftCoin/> */}
+            <div className="l-section">
+                <div className="pad-32">
+                <header>
+                    <img className="logo" src={Logo} alt="Brand-logo"/>
+                </header>
+                {/* <div className="page-tab">
+
+                </div> */}
+                <div className="new-biz">
+                <h1>Create multiple sub-account</h1>
+                <p>Organise your business finances easily
+                    with multiple accounts. No limits! </p>
+                <img src={CoinImage} className="img-fluid" alt="Coin Safe" />
+                <footer>
+                    <p>&copy; 2020 Prospa Inc</p>
+                </footer>
+            </div>
+            </div>
+        </div>
             </div>
             <div className="col-md-9 full-height">
                 <div className="d-flex justify-content-end login">
