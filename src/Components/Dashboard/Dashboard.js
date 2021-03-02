@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Dashboard.css'
 import RecentBiz from './Transactions'
+import ProfileImage from '../../images/Sonia.jpg'
 
 import {
     Link, Route
@@ -21,9 +22,28 @@ function DashPage() {
         </div>
 
         <div class="main-panel col-md-9 col-lg-9">
-        <nav class="navbar navbar-expand-md p-2 navbar-light bg-white">
+
+        <nav class="navbar navbar-expand-md p-3 navbar-light bg-white">
         <div className="container-fluid">
-          <span class="navbar-brand mb-0 h1">Dashboard</span>
+        <span class="navbar-brand nav-nav mb-0 h1">Dashboard</span>
+
+        
+
+        <div class="collapse navbar-collapse d-flex justify-content-md-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-2">
+            <span className="fa-stack fa-1x">
+              <i className="fa fa-square up fa-inverse fa-stack-2x"></i>
+              <i className="fa fa-bell up2 fa-stack-1x"></i>
+            </span>
+            </li>
+            <li class="nav-item mx-4">
+              <img src={ProfileImage} className="rounded-circle img-fluid article-img" alt="Profile Image" />
+            </li>
+            
+          </ul>
+        </div>
+         
         </div>
         </nav>
         
