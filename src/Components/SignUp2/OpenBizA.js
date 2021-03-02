@@ -34,7 +34,7 @@ const Screen2 = () => {
     return(
         <div className="container-fluid full-height">
         <div className="row full-height">
-            <div className="col-md-3 p-0 ">
+            <div className="col-md-3 the-left p-0 ">
                 <LeftCoin/>
             </div>
             <div className="col-md-9">     
@@ -63,7 +63,7 @@ const Screen2 = () => {
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" id="registered" name="cac" onClick={showSubContent} />
                                     <label className="form-check-label cac1" for="registered">
-                                        <p>I have a registered business/ charity with CAC</p>
+                                        <p className="formlist">I have a registered business/ charity with CAC</p>
                                     </label>
                                 </div>  
                                     {showResults ? <SubContent /> : null}
@@ -72,7 +72,7 @@ const Screen2 = () => {
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubContent2} />
                                 <label className="form-check-label" for="no-reg">
-                                    <p>My business is not yet registered, I would like to register</p>
+                                    <p className="formlist">My business is not yet registered, I would like to register</p>
                                 </label>
                             </div>
                                 {showResults2 ? <SubContent2 /> : null}
@@ -81,7 +81,7 @@ const Screen2 = () => {
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" id="freelance" name="cac" onClick={showSubContent3} />
                                 <label className="form-check-label" for="freelance">
-                                    <p>I'm a freelancer I do business in my personal name</p>
+                                    <p className="formlist">I'm a freelancer I do business in my personal name</p>
                                 </label>
                             </div>
                                 {showResults3 ? <SubContent3 /> : null}

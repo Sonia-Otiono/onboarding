@@ -22,16 +22,19 @@
     margin-top: 150px;
 }
 .new-biz h1{
-    font-family: 'BRFirma-SemiBold';
+    font-family: 'BRFirma-SemiBold', serif;
     font-size: 30px;
 }
 .new-biz p{
+    font-family: 'BRFirma-Regular', serif;
     font-size: 14px;
 }
 .new-biz img{
     margin-bottom: 30px;
 }
 .new-biz footer p{
+    font-family: 'BRFirma-Regular', serif;
+    font-size: 14px;
     margin-top: 10px;
     margin-bottom: 5px ;
 }
