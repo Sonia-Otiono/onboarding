@@ -1,0 +1,14 @@
+
+.thesquare{
+    color: #F4F8FB;
+}
+.thechev{
+    color: #8397AB;
+}
+.bn-button{
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    background-color: #1C1335;
+    color: #ffffff;
+}

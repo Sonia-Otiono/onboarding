@@ -1,20 +1,11 @@
 import React, {useState} from 'react'
 import './Dashboard.css'
-import './demo_style.css'
-// import './flag-icon.min.css'
-// import './ionicons.css'
-// import './materialdesignicons.min.css'
-// import './style.css'
-import './vendor.bundle.addons.css'
-import './vendor.bundle.base.css'
-// import RouterIcon from '@material-ui/icons/Router';
 import RecentBiz from './Transactions'
-
-
 
 import {
     Link, Route
   } from "react-router-dom";
+import SideBar from './SideBar'
 
 function DashPage() {
 
@@ -22,76 +13,27 @@ function DashPage() {
   const showMore = () => {setContent(true)}
 
     return(
-        // <div>
-        <div class="container-scroller">
-        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-         
+      
+      <div>
+        <div className="row">
+        <div className="col-md-3">
+          <SideBar />
         </div>
-        <div class="navbar-menu-wrapper shadow-none d-flex align-items-center">
-          <ul class="navbar-nav">
-            <h4>Dashboard</h4>
-            <li class="nav-item dropdown language-dropdown">    
-            </li>
-          </ul>
 
-          <ul class="navbar-nav ml-auto">
-              
-            
-            <li class="nav-item dropdown d-xl-inline-block user-dropdown">
-              <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <img class="img-xs rounded-circle d-inline-flex justify-content-md-end" src="assets/images/faces/face8.jpg" alt="Profile image"/> </a>
-            </li>
-            </ul>
-            </div>
-      </nav>
-
-
-      <div class="container-fluid page-body-wrapper">
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-           
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="menu-icon typcn typcn-document-text"></i>
-                <span class="menu-title">Dashboard</span>
-              </a>
-            </li>
-            
-            
-            <li class="nav-item">
-              <a class="nav-link" href="pages/charts/chartjs.html">
-                <i class="menu-icon typcn typcn-th-large-outline"></i>
-                <span class="menu-title">Invoice</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/tables/basic-table.html">
-                <i class="menu-icon typcn typcn-bell"></i>
-                <span class="menu-title">Management</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/icons/font-awesome.html">
-                <i class="menu-icon typcn typcn-user-outline"></i>
-                <span class="menu-title">Security</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#auth" aria-expanded="false" aria-controls="auth">
-                <i class="menu-icon typcn typcn-document-add"></i>
-                <span class="menu-title">Support</span>
-                <i class="menu-arrow"></i>
-              </a>
-            </li>
-          </ul>
+        <div class="main-panel col-md-9 col-lg-9">
+        <nav class="navbar navbar-expand-md p-2 navbar-light bg-white">
+        <div className="container-fluid">
+          <span class="navbar-brand mb-0 h1">Dashboard</span>
+        </div>
         </nav>
-        <div class="main-panel">
+        
+        
           <div class="content-wrapper">
+            <div className="container-fluid">
 
-              <div className="row">
-                  <div className="col-md-9">
-                      <h3>Welcome back, Kathy</h3>
+              <div className="row mt-4">
+                  <div className="col-md-9 kathy">
+                      <h3 className="mb-0">Welcome back, Kathy</h3>
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
                   <div className="col-md-3 d-flex justify-content-sm-end justify-content-md-end ml-0">
@@ -114,8 +56,8 @@ function DashPage() {
                         {/* <div class="d-flex"> */}
                           <div class="row d-flex">
                             <div className="col-md-8">
-                              <h5 class="mb-0 ">CURRENT ACCOUNT</h5>
-                              <p class="mb-0 text-muted">PROVIDUS BANK - 9906533917</p>
+                              <h5 class="mb-0 dash-acc ">CURRENT ACCOUNT</h5>
+                              <p class="mb-0 dash-acc2 text-muted">PROVIDUS BANK - 9906533917</p>
                             </div>
                             <div className="col-md-4 d-flex justify-content-sm-end justify-content-md-end">
                               <p>
@@ -127,7 +69,7 @@ function DashPage() {
                             </div>
                           </div>
                           <div>
-                            <h1 class="mt-4 naira">N814,800<span className="kobo">.45</span></h1>
+                            <p class="mt-4 naira">N814,800<span className="kobo">.45</span></p>
                             </div>
                             {/* <div></div> */}
                           {/* <div class="wrapper my-auto ml-auto ml-lg-4">
@@ -138,8 +80,8 @@ function DashPage() {
                         {/* <div class="d-flex"> */}
                           <div class="row d-flex">
                             <div className="col-md-7">
-                              <h5 class="mb-0 ">SAVINGS ACCOUNT</h5>
-                              <p class="mb-0 text-muted">SUB ACCOUNT - 12346789</p>
+                              <h5 class="mb-0 dash-acc">SAVINGS ACCOUNT</h5>
+                              <p class="mb-0 dash-acc2 text-muted">SUB ACCOUNT - 12346789</p>
                             </div>
                             <div className="col-md-5 d-flex justify-content-sm-end justify-content-md-end">
                               <span className="fa-stack fa-2x">
@@ -149,7 +91,7 @@ function DashPage() {
                             </div>
                           </div>
                           <div>
-                            <h1 class="mt-4 naira">N39,342<span className="kobo">.45</span></h1>
+                            <p class="mt-4 naira">N39,342<span className="kobo">.45</span></p>
                             </div>
                           {/* <div class="wrapper my-auto ml-auto ml-lg-4">
                             <canvas height="50" width="100" id="stats-line-graph-1"></canvas>
@@ -162,21 +104,21 @@ function DashPage() {
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6 rounded curr p-3">
 
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-12 mb-4 june-cash">
                         <h4>June summary</h4>
                     </div>
                     <div className="row">
                           <div className="col-md-3">
-                            <p className="text-muted mb-0">Money in</p>
-                            <p>N 5,650,000</p>
+                            <p className="text-muted mb-0 money-in">Money in</p>
+                            <p className="zeros">N 5,650,000</p>
                           </div>
                           <div className="col-md-3">
-                            <p className="text-muted mb-0">Money out</p>
-                            <p>N 5,650,000</p>
+                            <p className="text-muted mb-0 money-in">Money out</p>
+                            <p className="zeros">N 5,650,000</p>
                           </div>
                           <div className="col-md-3">
-                            <p className="text-muted mb-0">Difference</p>
-                            <p>N 5,650,000</p>
+                            <p className="text-muted mb-0 money-in">Difference</p>
+                            <p className="zeros">N 5,650,000</p>
                           </div>
                     </div>
                     <div className="graph">
@@ -186,7 +128,7 @@ function DashPage() {
 
                   <div className="col-md-5 curr rounded p-3">
 
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-12 mb-4 june-cash">
                       <h4>Cash outflow</h4>
                     </div>
                     <div className="row mb-4">
@@ -199,14 +141,14 @@ function DashPage() {
                               </span>
                             </div>
                             <div className="col-md-7">
-                              <p className="text-muted">Bank Fees</p>
+                              <p className="text-muted cashflow">Bank Fees</p>
                             </div>
                           </div>
                       </div>
 
                       <div className="col-md-7">
                         <div>
-                          <p className="mb-0">- N 250,000</p>
+                          <p className="mb-0  progress-zeros">- N 250,000</p>
                         </div>
                         <div class="progress">
                           <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -224,14 +166,14 @@ function DashPage() {
                               </span>
                             </div>
                             <div className="col-md-7">
-                              <p className="text-muted">Internet</p>
+                              <p className="text-muted cashflow">Internet</p>
                             </div>
                           </div>
                       </div>
 
                       <div className="col-md-7">
                         <div>
-                          <p className="mb-0">- N 250,000</p>
+                          <p className="mb-0  progress-zeros">- N 250,000</p>
                         </div>
                         <div class="progress">
                           <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -249,14 +191,14 @@ function DashPage() {
                               </span>
                             </div>
                             <div className="col-md-7">
-                              <p className="text-muted">Marketing</p>
+                              <p className="text-muted cashflow">Marketing</p>
                             </div>
                           </div>
                       </div>
 
                       <div className="col-md-7">
                         <div>
-                          <p className="mb-0">- N 250,000</p>
+                          <p className="mb-0  progress-zeros">- N 250,000</p>
                         </div>
                         <div class="progress">
                           <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -273,14 +215,14 @@ function DashPage() {
                               </span>
                             </div>
                             <div className="col-md-7">
-                              <p className="text-muted">Transfer</p>
+                              <p className="text-muted cashflow ">Transfer</p>
                             </div>
                           </div>
                       </div>
 
                       <div className="col-md-7">
                         <div>
-                          <p className="mb-0">- N 250,000</p>
+                          <p className="mb-0 progress-zeros">- N 250,000</p>
                         </div>
                         <div class="progress">
                           <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -294,10 +236,10 @@ function DashPage() {
                 <div className="bg-white p-3 rounded">
                   <div className="row mb-4 ">
                     <div className="col-md-6">
-                        <h5 className="">Recent transactions</h5>
+                        <h5 className="recent-t">Recent transactions</h5>
                     </div>
                     <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
-                      <button type="button" className="btn border border-danger bg-white" onClick={showMore}>See all</button>
+                      <button type="button" className="btn border border-danger seeall bg-white" onClick={showMore}>See all</button>
                     </div>
                   </div>
                   
@@ -311,13 +253,13 @@ function DashPage() {
                               </span>
                             </div>
                             <div className="col-md-9">
-                              <p className="mb-0">Transfer Fee</p>
-                              <p className="text-muted">12:49pm</p>
+                              <p className="mb-0 adam">Transfer Fee</p>
+                              <p className="text-muted twelve">12:49pm</p>
                             </div>
                       </div>
                     </div>
                     <div className="col-md-9 d-flex justify-content-sm-end justify-content-md-end">
-                      <p>-N145.90</p>
+                      <p className="minus">-N145.90</p>
                     </div>
                   </div>
 
@@ -325,7 +267,7 @@ function DashPage() {
                           
                 </div>
                 
-              {/* </div> */}
+              </div>
              </div>
           {/* </div>  */}
 
@@ -339,3 +281,6 @@ function DashPage() {
 }
 
 export default DashPage
+      
+
+      

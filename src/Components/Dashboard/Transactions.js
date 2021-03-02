@@ -13,13 +13,13 @@ const RecentBiz = () => {
                             </span>
                             </div>
                             <div className="col-md-9">
-                              <p className="mb-0">Adam Chapman</p>
-                              <p className="text-muted">12:49pm</p>
+                              <p className="mb-0 adam">Adam Chapman</p>
+                              <p className="text-muted twelve">12:49pm</p>
                             </div>
                       </div>
                     </div>
                     <div className="col-md-9 d-flex justify-content-sm-end justify-content-md-end">
-                      <p>-N2,000.00</p>
+                      <p className="minus">-N2,000.00</p>
                     </div>
                   </div>
                                     
@@ -33,13 +33,13 @@ const RecentBiz = () => {
                             </span>
                             </div>
                             <div className="col-md-9">
-                              <p className="mb-0">Shirley Barnes</p>
-                              <p className="text-muted">12:49pm</p>
+                              <p className="mb-0 adam">Shirley Barnes</p>
+                              <p className="text-muted twelve">12:49pm</p>
                             </div>
                       </div>
                     </div>
                     <div className="col-md-9 d-flex justify-content-sm-end justify-content-md-end">
-                      <p>-N2,000.00</p>
+                      <p className="minus">-N2,000.00</p>
                     </div>
                   </div>
                                     
@@ -53,13 +53,13 @@ const RecentBiz = () => {
                             </span>
                             </div>
                             <div className="col-md-9">
-                              <p className="mb-0">Shirley Barnes</p>
-                              <p className="text-muted">12:49pm</p>
+                              <p className="mb-0 adam">Shirley Barnes</p>
+                              <p className="text-muted twelve">12:49pm</p>
                             </div>
                       </div>
                     </div>
                     <div className="col-md-9 d-flex justify-content-sm-end justify-content-md-end">
-                      <p>-N2,000.00</p>
+                      <p className="minus">-N2,000.00</p>
                     </div>
                   </div>
         </div>
