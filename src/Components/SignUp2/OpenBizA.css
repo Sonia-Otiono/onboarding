@@ -1,10 +1,17 @@
 /* .login{
     padding: 32px;
 } */
+/* .the-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
 .topbar{
     padding: 32px 0 0 12px;
 }
 .member{
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 14px;
     color: #1C1335 !important;
     text-align: right;
     /* vertical-align: middle; */
@@ -20,35 +27,33 @@
     align-items: center;
     margin-top: 60px ;
 }
-.create h3{
-    font-size: 28px;
-    font-weight: 500;
-    color: #1B003B;
-}
-.create p{
-    font-size: 16px;
-    color: #1B003B;
-}
 .btn{
     background-color:#FA4A84;
     max-width: 100%;
     margin-top: 10px;
 }
 .btn-next{
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 16px;
     width: 100%;
     color: #FFFFFF;
     margin-bottom: 30px;
 }
-form label{
-    font-size: 12px;
+.formlist{
+    font-family: 'BRFirma-SemiBold', serif !important;
+    font-size: 18px !important;
 }
 .new-acc{
     margin-bottom: 45px;
 }
-.new-acc h3{
-    font-weight: 400;
+.create h3{
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 28px;
+    color: #1B003B;
 }
 .new-acc p{
+    font-family: 'BRFirma-Regular', serif;
+    font-size: 16px;
     color: #3c444b !important;
 }
 .box1 .box2{

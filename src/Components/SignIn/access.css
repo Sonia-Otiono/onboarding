@@ -2,7 +2,10 @@
     padding: 32px;
 }
 .member{
-    color: #1C1335;
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 14px;
+    color: #1C1335 !important;
+    text-align: right;
 }
 .sign-in{
     color: #FA4A84;
@@ -14,32 +17,30 @@
     margin-top: 25px ;
 }
 .create h3{
+    font-family: 'BRFirma-SemiBold', serif;
     font-size: 28px;
-    font-weight: 500;
     color: #1B003B;
 }
 .create p{
+    font-family: 'BRFirma-Regular', serif;
     font-size: 16px;
-    color: #1B003B;
+    color: #3c444b;
 }
 .btn{
     background-color:#FA4A84;
     max-width: 100%;
 }
 .btn-next{
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 16px;
     width: 100%;
+    color: #FFFFFF;
 }
 form label{
     font-size: 12px;
 }
 .welcome{
     margin-bottom: 45px;
-}
-.welcome p{
-    color: #3c444b !important;
-}
-.welcome h3{
-    font-weight: 400;
 }
 .info{
     margin-top: 40px;

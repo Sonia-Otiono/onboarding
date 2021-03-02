@@ -41,7 +41,7 @@ const Screen3 = () => {
             <div className="col-md-9">     
                 <div class="row topbar">
                     <div className="col-md-6">
-                        <Link to="/">
+                        <Link to="/signup2">
                             <span className="fa-stack fa-1x">
                                 <i className="fa fa-square name bank-transfer fa-stack-2x"></i>
                                 <i className="fa fa-chevron-left name2 fa-inverse fa-stack-1x"></i>
@@ -65,7 +65,7 @@ const Screen3 = () => {
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" id="registered" name="cac" onClick={showSubInfo1} />
                                 <label className="form-check-label" for="registered">
-                                    <p>I have a registered business/ charity with CAC</p>
+                                    <p className="formlist">I have a registered business/ charity with CAC</p>
                                 </label>
                             </div>
                             {showResults ? <SubInfo1 /> : null}
@@ -74,7 +74,7 @@ const Screen3 = () => {
                         <div className="form-check">
                             <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubInfo2} />
                             <label className="form-check-label cac2" for="no-reg">
-                                <p>My business is not yet registered, I would like to register</p>
+                                <p className="formlist">My business is not yet registered, I would like to register</p>
                             </label>
                         </div>
                         {showResults2 ? <SubInfo2 /> : null}
@@ -83,7 +83,7 @@ const Screen3 = () => {
                         <div className="form-check">
                             <input className="form-check-input" type="radio" id="freelance" name="cac" onClick={showSubInfo3} />
                             <label className="form-check-label" for="freelance">
-                                <p>I'm a freelancer I do business in my personal name</p>
+                                <p className="formlist">I'm a freelancer I do business in my personal name</p>
                             </label>
                         </div>
                             {showResults3 ? <SubInfo3 /> : null}

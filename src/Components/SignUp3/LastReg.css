@@ -2,7 +2,10 @@
     padding: 32px;
 }
 .member{
-    color: #1C1335;
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 14px;
+    color: #1C1335 !important;
+    text-align: right;
 }
 .sign-in{
     color: #FA4A84;
@@ -13,14 +16,9 @@
     align-items: center;
     margin-top: 60px ;
 }
-.create h3{
-    font-size: 28px;
-    font-weight: 500;
-    color: #1B003B;
-}
-.create p{
-    font-size: 16px;
-    color: #1B003B;
+.formlist{
+    font-family: 'BRFirma-SemiBold', serif !important;
+    font-size: 18px !important;
 }
 .btn{
     background-color:#FA4A84;
@@ -28,27 +26,26 @@
     margin-top: 10px;
 }
 .btn-next{
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 16px;
     width: 100%;
     color: #FFFFFF;
     margin-bottom: 30px;
-
-}
-form label{
-    font-size: 12px;
 }
 .new-acc{
     margin-bottom: 45px;
 }
 .new-acc h3{
-    font-weight: 400;
+    font-family: 'BRFirma-SemiBold', serif;
+    font-size: 28px;
+    color: #1B003B;
 }
 .new-acc p{
-    color: #8397AB;
+    font-family: 'BRFirma-Regular', serif;
+    font-size: 16px !important;
+    color: #3c444b !important;
 }
-.box1 .box2{
-    color:#1C1335;
-    font-size: 18px;
-}
+
 .box1, .box2, .box3{
     margin-bottom: 20px;
 }
