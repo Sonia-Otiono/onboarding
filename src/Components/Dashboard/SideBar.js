@@ -9,6 +9,7 @@ const SideBar = () => {
 
     return (
         <div className="side-section container">
+            
            <div class="row mt-4">
                 <div className="col-md-9">
 
@@ -34,6 +35,7 @@ const SideBar = () => {
 
                     {list ? <DropMenu /> : null}
 
+            <div className="container mt-4">
             <div className="row mb-4">
                 <div className="col-md-2 mr-0">
                     <i className="fa fa-clipboard fa-md"></i>
@@ -70,6 +72,9 @@ const SideBar = () => {
                 </div>
               
             </div>
+            </div>
+
+            
         </div>
     )
 }

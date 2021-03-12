@@ -17,42 +17,45 @@ function DashPage() {
       
       <div>
         <div className="row">
-        <div className="col-md-3">
-          <SideBar />
-        </div>
+          <div className="col-md-3">
+            <SideBar />
+          </div>
 
-        <div class="main-panel col-md-9 col-lg-9">
+          <div class="main-panel col-md-9 col-lg-9">
 
-        <nav class="navbar navbar-expand-md p-3 navbar-light bg-white">
-        <div className="container-fluid">
-        <span class="navbar-brand nav-nav mb-0 h1">Dashboard</span>
+            <div className="bg-white">
+              <nav class="navbar navbar-expand-md p-3 navbar-light">
+              <div className="container">
+                <span class="navbar-brand nav-nav mb-0 h1">Dashboard</span>
 
-        
+                
 
-        <div class="collapse navbar-collapse d-flex justify-content-md-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item mr-2">
-            <span className="fa-stack fa-1x">
-              <i className="fa fa-square up fa-inverse fa-stack-2x"></i>
-              <i className="fa fa-bell up2 fa-stack-1x"></i>
-            </span>
-            </li>
-            <li class="nav-item mx-4">
-              <img src={ProfileImage} className="rounded-circle img-fluid article-img" alt="Profile Image" />
-            </li>
+                <div class="collapse navbar-collapse d-flex justify-content-md-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mr-2">
+                    <span className="fa-stack fa-1x">
+                      <i className="fa fa-square up fa-inverse fa-stack-2x"></i>
+                      <i className="fa fa-bell up2 fa-stack-1x"></i>
+                    </span>
+                    </li>
+                    <li class="nav-item mx-4">
+                      <img src={ProfileImage} className="rounded-circle img-fluid article-img" alt="Profile Image" />
+                    </li>
+                    
+                  </ul>
+                </div>
+              
+              </div>
+            </nav>
+            </div>
             
-          </ul>
-        </div>
-         
-        </div>
-        </nav>
         
         
-          <div class="content-wrapper">
-            <div className="container-fluid">
+          <div class="container">
+            <div className="container me-5">
 
-              <div className="row mt-4">
-                  <div className="col-md-9 kathy">
+              <div className="row mt-4 ">
+                  <div className="col-md-9 kathy mt-4">
                       <h3 className="mb-0">Welcome back, Kathy</h3>
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
@@ -67,9 +70,9 @@ function DashPage() {
 
 
 
-            {/* <div class="row">
+             {/* <div class="row">
               <div class="col-md-12 grid-margin"> */}
-                <div class="">
+                <div className="">
                     <div class="row d-flex justify-content-between">
 
                       <div class="col-md-5 curr p-3">
@@ -120,6 +123,8 @@ function DashPage() {
 
                     </div>
                 </div>
+
+                <div>
 
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6 rounded curr p-3">
@@ -253,9 +258,9 @@ function DashPage() {
                   </div>
                 </div>
 
-                <div className="bg-white p-3 rounded">
-                  <div className="row mb-4 ">
-                    <div className="col-md-6">
+                <div className="bg-white row rounded p-3">
+                  <div className="row mb-4">
+                    <div className="col-md-6 ">
                         <h5 className="recent-t">Recent transactions</h5>
                     </div>
                     <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
@@ -295,7 +300,7 @@ function DashPage() {
         </div>
       </div>
     </div>
-    // </div>
+    </div>
     )
 
 }
