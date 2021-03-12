@@ -2,7 +2,7 @@ import React from 'react'
 
 const DropMenu = () => {
     return(
-        <div>
+        <div className="container">
             <div class="row">
                 <div class="col-md-12 shadow p-2">
                     <div class="list-group" id="list-tab" role="tablist">
@@ -12,15 +12,7 @@ const DropMenu = () => {
 
                     </div>
                 </div>
-                {/* <div class="col-8">
-                    <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-                    </div>
-                </div> */}
-                </div>
+            </div>
         </div>
     )
 }

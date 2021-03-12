@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './SideBar.css'
 import DropMenu from './Dropdown'
+import Logo from '../../images/Grey-logo.svg'
 
 const SideBar = () => {
 
@@ -8,7 +9,7 @@ const SideBar = () => {
     const showList = () => {setList(true)}
 
     return (
-        <div className="side-section container">
+        <div className="side container">
             
            <div class="row mt-4">
                 <div className="col-md-9">
@@ -74,6 +75,11 @@ const SideBar = () => {
             </div>
             </div>
 
+            <div className="container">
+                <footer className="grey-footer">
+                    <img className="prospa-logo" src={Logo} alt="Brand-logo"/>
+                </footer>
+            </div>
             
         </div>
     )

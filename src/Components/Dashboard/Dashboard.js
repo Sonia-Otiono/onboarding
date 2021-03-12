@@ -17,9 +17,10 @@ function DashPage() {
       
       <div>
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 side-bar">
             <SideBar />
           </div>
+          
 
           <div class="main-panel col-md-9 col-lg-9">
 
@@ -32,13 +33,13 @@ function DashPage() {
 
                 <div class="collapse navbar-collapse d-flex justify-content-md-end" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item mr-2">
+                    <li class="nav-item me-4">
                     <span className="fa-stack fa-1x">
                       <i className="fa fa-square up fa-inverse fa-stack-2x"></i>
                       <i className="fa fa-bell up2 fa-stack-1x"></i>
                     </span>
                     </li>
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mr-0">
                       <img src={ProfileImage} className="rounded-circle img-fluid article-img" alt="Profile Image" />
                     </li>
                     
@@ -55,7 +56,7 @@ function DashPage() {
             <div className="container me-5">
 
               <div className="row mt-4 ">
-                  <div className="col-md-9 kathy mt-4">
+                  <div className="col-md-9 kathy mt-4 ml-0">
                       <h3 className="mb-0">Welcome back, Kathy</h3>
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
@@ -79,7 +80,7 @@ function DashPage() {
                         {/* <div class="d-flex"> */}
                           <div class="row d-flex">
                             <div className="col-md-8">
-                              <h5 class="mb-0 dash-acc ">CURRENT ACCOUNT</h5>
+                              <h5 class="mb-0 dash-acc mt-2 ">CURRENT ACCOUNT</h5>
                               <p class="mb-0 dash-acc2 text-muted">PROVIDUS BANK - 9906533917</p>
                             </div>
                             <div className="col-md-4 d-flex justify-content-sm-end justify-content-md-end">
@@ -103,7 +104,7 @@ function DashPage() {
                         {/* <div class="d-flex"> */}
                           <div class="row d-flex">
                             <div className="col-md-7">
-                              <h5 class="mb-0 dash-acc">SAVINGS ACCOUNT</h5>
+                              <h5 class="mb-0 dash-acc mt-2">SAVINGS ACCOUNT</h5>
                               <p class="mb-0 dash-acc2 text-muted">SUB ACCOUNT - 12346789</p>
                             </div>
                             <div className="col-md-5 d-flex justify-content-sm-end justify-content-md-end">
@@ -129,7 +130,7 @@ function DashPage() {
                 <div className="row d-flex justify-content-between">
                   <div className="col-md-6 rounded curr p-3">
 
-                    <div className="col-md-12 mb-4 june-cash">
+                    <div className="col-md-12 mb-4 mt-2 june-cash">
                         <h4>June summary</h4>
                     </div>
                     <div className="row">
@@ -153,7 +154,7 @@ function DashPage() {
 
                   <div className="col-md-5 curr rounded p-3">
 
-                    <div className="col-md-12 mb-4 june-cash">
+                    <div className="col-md-12 mb-4 mt-2 june-cash">
                       <h4>Cash outflow</h4>
                     </div>
                     <div className="row mb-4">
@@ -258,9 +259,9 @@ function DashPage() {
                   </div>
                 </div>
 
-                <div className="bg-white row rounded p-3">
+                <div className="bg-white row rounded p-3 mt-3">
                   <div className="row mb-4">
-                    <div className="col-md-6 ">
+                    <div className="col-md-6 mt-3">
                         <h5 className="recent-t">Recent transactions</h5>
                     </div>
                     <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
