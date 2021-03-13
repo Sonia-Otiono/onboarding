@@ -30,8 +30,9 @@
     font-size: 12px;
     color: #6c757d;
   }
-  .grey-footer{
-    margin-top: 200px;
-    bottom: 0;
-  }
+ 
   
+  .footer{
+    position: fixed;
+    bottom: 20px;
+  }
