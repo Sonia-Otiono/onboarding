@@ -75,8 +75,8 @@ const SideBar = () => {
             </div>
             </div>
 
-            <div className="ms-2">
-                <footer className="grey-footer">
+            <div className="ms-2 footer">
+                <footer>
                     <img className="prospa-logo" src={Logo} alt="Brand-logo"/>
                 </footer>
             </div>
