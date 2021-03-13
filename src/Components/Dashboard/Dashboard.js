@@ -17,12 +17,14 @@ function DashPage() {
       
       <div>
         <div className="row">
-          <div className="col-md-3 side-bar">
+          <div className="col-md-3">
+            <div className="sticky-top">
             <SideBar />
+            </div>
           </div>
           
 
-          <div class="main-panel col-md-9 col-lg-9">
+          <div class=" main-panel p-0 col-md-9 col-lg-9">
 
             <div className="bg-white">
               <nav class="navbar navbar-expand-md p-3 navbar-light">
@@ -55,8 +57,8 @@ function DashPage() {
           <div class="container">
             <div className="container me-5">
 
-              <div className="row mt-4 ">
-                  <div className="col-md-9 kathy mt-4 ml-0">
+              <div className="row mt-4">
+                  <div className="col-md-9 kathy mt-4">
                       <h3 className="mb-0">Welcome back, Kathy</h3>
                       <p>Here's what has been happening in the last <Link to="#"><span className="text-danger"> <a> 7 days </a></span></Link></p>
                   </div>
@@ -74,7 +76,7 @@ function DashPage() {
              {/* <div class="row">
               <div class="col-md-12 grid-margin"> */}
                 <div className="">
-                    <div class="row d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
 
                       <div class="col-md-5 curr p-3">
                         {/* <div class="d-flex"> */}
@@ -127,7 +129,7 @@ function DashPage() {
 
                 <div>
 
-                <div className="row d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                   <div className="col-md-6 rounded curr p-3">
 
                     <div className="col-md-12 mb-4 mt-2 june-cash">
@@ -259,12 +261,12 @@ function DashPage() {
                   </div>
                 </div>
 
-                <div className="bg-white row rounded p-3 mt-3">
+                <div className="bg-white rounded p-3 mt-3">
                   <div className="row mb-4">
                     <div className="col-md-6 mt-3">
                         <h5 className="recent-t">Recent transactions</h5>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-sm-end justify-content-md-end">
+                    <div className="col-md-6 mt-2 d-flex justify-content-sm-end justify-content-md-end">
                       <button type="button" className="btn border border-danger seeall bg-white" onClick={showMore}>See all</button>
                     </div>
                   </div>
