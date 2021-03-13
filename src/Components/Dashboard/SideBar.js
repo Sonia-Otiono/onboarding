@@ -36,7 +36,7 @@ const SideBar = () => {
 
                     {list ? <DropMenu /> : null}
 
-            <div className="container mt-4">
+            <div className="ms-2 mt-4">
             <div className="row mb-4">
                 <div className="col-md-2 mr-0">
                     <i className="fa fa-clipboard fa-md"></i>
@@ -75,7 +75,7 @@ const SideBar = () => {
             </div>
             </div>
 
-            <div className="container">
+            <div className="ms-2">
                 <footer className="grey-footer">
                     <img className="prospa-logo" src={Logo} alt="Brand-logo"/>
                 </footer>
