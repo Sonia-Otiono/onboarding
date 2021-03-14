@@ -47,11 +47,11 @@
 form label{
     font-size: 12px;
 }
-.fa-chevron-down{
+/* .fa-chevron-down{
     color: black;
     position: relative;
     bottom: 35px;
-}
+} */
 /* .form-control:focus{
     border-color: none !important;
     box-shadow: transparent;
