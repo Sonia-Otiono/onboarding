@@ -90,7 +90,7 @@ const Screen3 = () => {
                         </div>
                         <div className="d-md-block">
                             <Link to="./Dashboard">
-                                <button type="button" className="btn btn-next p-2">Next</button>
+                                <button type="button" className="btn btn-next p-3">Next</button>
                             </Link>
                         </div>
                     </form>

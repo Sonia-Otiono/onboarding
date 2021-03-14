@@ -6,9 +6,11 @@
 }
 .bn-button{
     border-radius: 50%;
-    position: relative;
+    width: 40px;
+    height: 40px;
+    /* position: relative;
     top: -15px;
-    right: -5px;
+    right: -5px; */
     background-color: #1C1335;
     color: #ffffff;
 }
@@ -31,8 +33,14 @@
     color: #6c757d;
   }
  
-  
+  .button-initial{
+    text-align: center;
+  }
   .footer{
     position: fixed;
     bottom: 20px;
   }
+  .drop-div{
+    position: absolute;
+  }
+  
