@@ -54,7 +54,7 @@ function Screen4() {
                             </div>
                             <div className="d-md-block">
                                 <Link to="./dashboard">
-                                    <button type="button" className="btn btn-next">Next</button>
+                                    <button type="button" className="btn btn-next p-3">Next</button>
                                 </Link>
                             </div>
                         </form>

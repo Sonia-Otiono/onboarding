@@ -15,10 +15,11 @@ const SideBar = () => {
                 <div className="col-md-9">
 
                     <div className="row">
-                        <div className="col-md-4">
-                            <button type="button" className="btn btn-lg bn-button">BN</button>
+                        <div className="col-md-5 bn-button">
+                            <span className="button-initial">BN</span>
+                            {/* <button type="button" className="btn btn-lg bn-button"><span className="button-initial">BN</span></button> */}
                         </div>
-                        <div className="col-md-8">
+                        <div className="col-md-7">
                             <h5 className="mb-0 clay">Clayvant Inc</h5>
                             <p className="manage mt-0">Manage account</p>
                         </div>
@@ -35,6 +36,7 @@ const SideBar = () => {
             </div>
 
                     {list ? <DropMenu /> : null}
+                    
 
             <div className="ms-2 mt-4">
             <div className="row mb-4">

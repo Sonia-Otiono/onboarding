@@ -56,11 +56,11 @@ html, body {
   border-radius: 0;
 }
 
-.form-input:focus {
+/* .form-input:focus {
   border-style: solid;
   border-color: #66AFE9;
   border-bottom: 1px #FA4A84;
-}
+} */
 @font-face {
   font-family: 'BRFirma';
   src: local('BRFirma'), url(./Fonts/BRFirma-Bold.ttf) format('truetype');

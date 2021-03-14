@@ -35,7 +35,9 @@ function Screen1() {
                             <div className="row mb-3">
                             <div className="form-floating col-md-3">
                                 <input className="form-control form-input" id="country" autoComplete="off" placeholder="Country"></input>
-                                <label for="country">Country</label>
+                                <label for="country">Country<br /><span>+233</span>
+                                    <i className="fa fa-chevron-down fa-inverse fa-stack-1x"></i>
+                                </label>
                             </div>
                             <div className="form-floating col-md-9">
                                 <input className="form-control form-input" id="mobile_number" autoComplete="off" placeholder="Mobile number"></input>
@@ -49,7 +51,7 @@ function Screen1() {
                             </div>
                             <div className="d-md-block">
                             <Link to="/signup2">
-                                <button type="button" className="btn btn-next">Next</button>
+                                <button type="button" className="btn p-3  btn-next">Next</button>
                            </Link>     
                             </div>
                         </form>
