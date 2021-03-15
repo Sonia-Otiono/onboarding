@@ -2,11 +2,13 @@ import React, {useState} from 'react'
 import './Dashboard.css'
 import RecentBiz from './Transactions'
 import ProfileImage from '../../images/Sonia.jpg'
+import Chart from './chart'
 
 import {
     Link, Route
   } from "react-router-dom";
 import SideBar from './SideBar'
+import { ChatRight } from 'react-bootstrap-icons';
 
 function DashPage() {
 
@@ -150,7 +152,7 @@ function DashPage() {
                           </div>
                     </div>
                     <div className="graph">
-
+                      <Chart />
                     </div>
                   </div>
 
