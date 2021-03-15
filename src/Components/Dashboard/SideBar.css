@@ -35,10 +35,15 @@
  
   .button-initial{
     text-align: center;
+    vertical-align: middle;
     display: flex;
     justify-content: center;
   }
   .footer{
+    position: absolute;
+    bottom: 20px;
+  }
+  .footer-logo{
     position: fixed;
     bottom: 20px;
   }

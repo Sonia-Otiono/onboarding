@@ -20,9 +20,7 @@ function DashPage() {
       <div>
         <div className="row">
           <div className="col-md-3">
-            <div className="sticky-top">
             <SideBar />
-            </div>
           </div>
           
 

@@ -10,7 +10,7 @@ const SideBar = () => {
 
     return (
         <div className="side container">
-            
+             <div className="sticky-top">
            <div class="row mt-4">
                 <div className="col-md-9">
 
@@ -35,8 +35,7 @@ const SideBar = () => {
 
             </div>
 
-                    {list ? <DropMenu /> : null}
-                    
+                    {list ? <DropMenu /> : null}                
 
             <div className="ms-2 mt-4">
             <div className="row mb-4">
@@ -75,12 +74,14 @@ const SideBar = () => {
                 </div>
               
             </div>
-            </div>
-
-            <div className="ms-2 footer">
+            </div> 
+            
+            <div className="fixed ms-2 footer-logo">
                 <footer>
                     <img className="prospa-logo" src={Logo} alt="Brand-logo"/>
                 </footer>
+            </div>
+            
             </div>
             
         </div>

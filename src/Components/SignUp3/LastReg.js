@@ -16,10 +16,9 @@ const Screen3 = () => {
         setShowResults(true)
         setShowResults2(false)
         setShowResults3(false)
-        setBorderStyle({border: '1px solid gray'})
+        setBorderStyle({border: '1px solid red'})
         setBorderStyle2({})
         setBorderStyle3({})
-
     }
 
     const [showResults2, setShowResults2] = useState(false)
@@ -29,7 +28,7 @@ const Screen3 = () => {
         setShowResults(false)
         setShowResults3(false)
         setBorderStyle()
-        setBorderStyle2({border: '1px solid gray'})
+        setBorderStyle2({border: '1px solid red'})
         setBorderStyle3({})
     }
 
@@ -41,7 +40,7 @@ const Screen3 = () => {
         setShowResults2(false)
         setBorderStyle()
         setBorderStyle2()
-        setBorderStyle3({border: '1px solid gray'})
+        setBorderStyle3({border: '1px solid red'})
     }
 
     return(
@@ -74,7 +73,7 @@ const Screen3 = () => {
                         <p className="">A short description about account types</p>
                     </div>
                     <form>
-                        <div style={style} className="shadow-sm border-bottom box1 p-2 mb-2 rounded">
+                        <div style={style} className="shadow-sm box1 p-2 mb-2 rounded">
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" id="registered" name="cac" onClick={showSubInfo1} />
                                 <label className="form-check-label" for="registered">
@@ -83,7 +82,7 @@ const Screen3 = () => {
                             </div>
                             {showResults ? <SubInfo1 /> : null}
                         </div>
-                        <div style={style2} className="shadow-sm border-bottom box2 p-2 mb-2 rounded">
+                        <div style={style2} className="shadow-sm box2 p-2 mb-2 rounded">
                         <div className="form-check">
                             <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubInfo2} />
                             <label className="form-check-label cac2" for="no-reg">
@@ -92,7 +91,7 @@ const Screen3 = () => {
                         </div>
                         {showResults2 ? <SubInfo2 /> : null}
                         </div>
-                        <div style={style3} className="shadow-sm box3 border-bottom p-2 mb-2 rounded">
+                        <div style={style3} className="shadow-sm box3 p-2 mb-2 rounded">
                         <div className="form-check">
                             <input className="form-check-input" type="radio" id="freelance" name="cac" onClick={showSubInfo3} />
                             <label className="form-check-label" for="freelance">

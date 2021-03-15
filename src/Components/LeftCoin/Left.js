@@ -18,9 +18,11 @@ const LeftCoin = () => {
                 <p>Organise your business finances easily
                     with multiple accounts. No limits! </p>
                 <img src={CoinImage} className="img-fluid" alt="Coin Safe" />
+                <div className="ms-2 footer">
                 <footer>
                     <p>&copy; 2020 Prospa Inc</p>
                 </footer>
+                </div>
             </div>
             </div>
         </div>
