@@ -36,7 +36,7 @@ function Screen1() {
                             <div className="form-floating col-md-3">
                                 <input className="form-control form-input" id="country" autoComplete="off" placeholder="Country"></input>
                                 <label for="country">Country<br /><span>+233</span>
-                                    <i className="fa fa-chevron-down fa-inverse fa-stack-1x"></i>
+                                    {/* <span className="me-"><i className="fa fa-chevron-down fa-inverse fa-stack-1x"></i></span> */}
                                 </label>
                             </div>
                             <div className="form-floating col-md-9">

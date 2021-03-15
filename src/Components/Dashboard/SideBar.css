@@ -35,6 +35,8 @@
  
   .button-initial{
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .footer{
     position: fixed;
