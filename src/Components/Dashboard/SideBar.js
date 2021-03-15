@@ -16,7 +16,7 @@ const SideBar = () => {
 
                     <div className="row">
                         <div className="col-md-5 bn-button">
-                            <span className="button-initial">BN</span>
+                            <span className="button-initial mt-2">BN</span>
                             {/* <button type="button" className="btn btn-lg bn-button"><span className="button-initial">BN</span></button> */}
                         </div>
                         <div className="col-md-7">

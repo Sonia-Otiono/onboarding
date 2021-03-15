@@ -83,7 +83,7 @@ const Screen3 = () => {
                             </div>
                             {showResults ? <SubInfo1 /> : null}
                         </div>
-                        <div style={style2} className="shadow-sm border border-danger border-bottom box2 p-2 mb-2 rounded">
+                        <div style={style2} className="shadow-sm border-bottom box2 p-2 mb-2 rounded">
                         <div className="form-check">
                             <input className="form-check-input" type="radio" id="no-reg" name="cac" onClick={showSubInfo2} />
                             <label className="form-check-label cac2" for="no-reg">
