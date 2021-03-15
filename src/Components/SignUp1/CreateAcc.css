@@ -78,6 +78,6 @@ input[type=number]:focus,
 
 
 .form-control:focus {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #7E51FF;
     box-shadow:none
 }
